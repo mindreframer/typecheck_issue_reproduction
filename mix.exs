@@ -23,7 +23,8 @@ defmodule TypesExample.MixProject do
     [
       # {:type_check, "~> 0.3"}
       {:type_check, github: "Qqwy/elixir-type_check", ref: "7b98567cce4cd3817cecd30de607f0e12e95964c"},
-      {:stream_data, "~> 0.5"}
+      {:stream_data, "~> 0.5"},
+      {:dialyxir, "~> 1.0", only: [:dev], runtime: false},
     ]
   end
 end
